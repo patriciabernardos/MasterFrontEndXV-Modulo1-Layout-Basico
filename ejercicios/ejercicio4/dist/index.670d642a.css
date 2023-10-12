@@ -1,0 +1,49 @@
+body {
+  background: #eee;
+  align-content: center;
+  justify-items: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  font-family: Nunito Sans, sans-serif;
+  display: grid;
+}
+
+.card-container {
+  grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+  align-content: space-evenly;
+  place-items: center;
+  display: grid;
+}
+
+.card {
+  border: 1px solid #c6c6c6;
+}
+
+.card .card-cover img {
+  width: 100%;
+}
+
+.card .card-body {
+  background-color: #fff;
+  padding: 0 20px 20px;
+  display: grid;
+}
+
+.card .published {
+  justify-self: end;
+}
+
+.card .card-date {
+  color: #7abe47;
+}
+
+.card .more-info {
+  color: #fff;
+  background-color: #7abe47;
+  border: none;
+  padding: 1em;
+  font-size: 1em;
+}
+
+/*# sourceMappingURL=index.670d642a.css.map */

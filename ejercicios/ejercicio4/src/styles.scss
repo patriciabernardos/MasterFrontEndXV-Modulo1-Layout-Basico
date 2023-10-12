@@ -1,0 +1,45 @@
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background: #eee;
+    display:grid;
+    align-content: center;
+    justify-items: center;
+  }
+.card-container{
+    display:grid;
+    justify-items: center;
+    grid-template-columns:repeat(auto-fill, minmax(20em, 1fr));
+    align-content: space-evenly;
+    align-items: center;
+}  
+
+.card{
+border: solid 1px #c6c6c6;
+
+
+& .card-cover img{
+   width: 100%;
+}
+& .card-body{
+    display: grid;
+    background-color: #fff;
+    padding: 0 20px 20px
+}
+& .published{
+    justify-self: end;
+}
+& .card-date{
+    color:#7abe47;
+}
+& .more-info{
+    background-color: #7abe47;
+    color: white;
+    padding: 1em;
+    font-size: 1em;
+    border: none;
+}
+
+}
