@@ -1,0 +1,31 @@
+$temaA:(base: red, important: rgb(124, 0, 0), warning:rgb(255, 159, 159) );
+
+.box{
+    width: 8em;
+    height: 8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+
+@each $name, $data in $temaA {
+    .#{$name}{
+        background-color: $data;
+    }
+}
+
+.font-2{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.font-1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.wshadow{
+    box-shadow: 5px 5px 6px;
+    border: 1px solid black;
+}
