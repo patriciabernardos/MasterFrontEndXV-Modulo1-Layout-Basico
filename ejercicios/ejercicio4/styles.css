@@ -5,20 +5,25 @@
   --accent-color: #678a47;
 }
 
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url('../../fuentes/Nunito_Sans/static/NunitoSans_10pt-Medium.ttf');
+}
+
+
 body {
   background-color: var(--bg-color);
   width: 100vw;
   height: 100vh;
   margin: 0;
-  font-family: Nunito Sans, sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   display: grid;
   grid-template-areas:
     'main main main'
     'footer footer footer';
-
-    grid-template-rows: 90% 10%;
-    grid-template-columns: 1fr;
-  }
+  grid-template-rows: 90% 10%;
+  grid-template-columns: 1fr;
+}
 
 main {
   grid-area: main;
@@ -31,7 +36,6 @@ footer {
 
 .card-title {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
 }
 
@@ -42,7 +46,8 @@ footer {
   justify-content: center;
 }
 
-.card {
+.card { 
+  background-color: var(--bg-card-color);
   border: 1px solid var(--border-color);
 }
 
@@ -64,8 +69,9 @@ footer {
 .card-date {
   color: var(--accent-color);
 }
-.btn{
-  color: #fff;
+
+.btn {
+  text-decoration: none;
   text-align: center;
   border: none;
   padding: 1em;
@@ -75,23 +81,13 @@ footer {
 .more-info {
   color: #fff;
   background-color: var(--accent-color);
-  border: none;
-  padding: 1em;
-  font-size: 1em;
 }
-
-
 
 footer {
   padding: 2em;
-  
+
 }
 
-
 .back {
-
   color: var(--accent-color);
-  border: none;
-  padding: 1em;
-  font-size: 1em;
 }

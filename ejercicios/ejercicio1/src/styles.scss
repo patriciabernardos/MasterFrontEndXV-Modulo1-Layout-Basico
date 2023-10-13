@@ -1,0 +1,35 @@
+$colors: (
+    1: #a3b788,
+    2:#a0a2c9,
+    3:#f4be7c
+);
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5em;
+    width: 5em;
+    border-radius: 10px;
+    margin:2px;
+}
+
+@each $name, $color in $colors {
+    .container-#{$name} {
+        display: flex;
+    }
+    .container-#{$name} .base-color {
+        background-color: $color;
+    }
+
+    @for $i from 1 through 4 {
+        .container-#{$name} .darken-#{$i} {
+            background-color: darken($color, 10% * $i);
+        }
+
+        .container-#{$name} .lighten-#{$i} {
+            background-color: lighten($color, 6% * $i);
+        }
+
+    }
+}

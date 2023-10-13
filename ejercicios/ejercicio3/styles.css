@@ -4,28 +4,72 @@
     --color-3: #c6c6c6;
     --color-4: #678a47;
     --color-5: #4b6434;
+ 
   }
 
+  @font-face {
+    font-family: 'Nunito Sans';
+    src: url('../../fuentes/Nunito_Sans/static/NunitoSans_10pt-Medium.ttf');
+  }
+  html, body {
+    min-height: calc(100vh - 10px) 
+  }
 body {
     background-color: var(--color-1);
-    font-family: Nunito Sans, sans-serif;  
+    font-family: 'Nunito Sans', sans-serif;  
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height:100vh;
+
 }
 
 nav{
-    margin:1em;
+   
 }
 
 nav ul{
     padding: 0;
 }
 
-footer{
-    bottom:0;
+nav ul li{
+    text-align: center;
+    
 }
+
+nav ul li a{
+    color: var(--color-1);
+    text-decoration: none;
+}
+
+nav ul li a, nav ul li{
+    padding:1em;
+}
+
+nav ul li:hover{
+    background-color:var(--color-5);
+}
+
+
+footer{
+   
+    padding: 2em;
+}
+
+.btn {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    border: none;
+    font-size: 1em;
+  }
+  
+.back {
+    color: var(--accent-color);
+  }
+
+
+ 
+
 @media (min-width: 1250px) {
   
   
@@ -37,11 +81,6 @@ nav ul{
     justify-content: space-between;
     top:0;
 }
-
-nav ul li{
-    padding:1em;
-}
-
 
 nav ul li:hover{
     background-color:var(--color-5);
@@ -64,15 +103,5 @@ nav ul li:hover{
         top:0;
     }
     
-    nav ul li{
-        padding:1em;
-        text-align: center;
-    }
-    
-    
-    nav ul li:hover{
-        background-color:var(--color-5);
-    }
-    
-     
+   
     }
