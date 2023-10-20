@@ -7,19 +7,19 @@
 }
 
 .base {
-  background-color: red;
+  background-color: #00f;
 }
 
 .important {
-  background-color: #7c0000;
+  background-color: #01094e;
 }
 
 .warning {
-  background-color: #ff9f9f;
+  background-color: #81dbff;
 }
 
 .font-2 {
-  font-family: Courier New, Courier, monospace;
+  font-family: Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif;
 }
 
 .font-1 {
@@ -28,7 +28,7 @@
 
 .wshadow {
   border: 1px solid #000;
-  box-shadow: 5px 5px 6px;
+  box-shadow: -5px 5px 6px;
 }
 
 /*# sourceMappingURL=index.4a508c1d.css.map */
